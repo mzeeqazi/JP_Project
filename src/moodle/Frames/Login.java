@@ -5,6 +5,8 @@
  */
 package moodle.Frames;
 import java.sql.*;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author mzeeqazi
@@ -16,8 +18,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        
-        jLabel1.setIcon(new javax.swing.ImageIcon(new javax.swing.ImageIcon(new java.io.File("/home/mzeeqazi/NetBeansProjects/moodle/src/moodle/FramesMoodle_Cloud.png").getAbsolutePath()).getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), java.awt.Image.SCALE_FAST)));
+              jLabel1.setIcon(new javax.swing.ImageIcon(new javax.swing.ImageIcon(new java.io.File("src/moodle/Frames/Moodle_Cloud.png").getAbsolutePath()).getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), java.awt.Image.SCALE_FAST)));
     }
 
     /**
@@ -73,7 +74,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         member.setMaximumRowCount(4);
-        member.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "Student", "Faculty", "Administrative" }));
+        member.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Student", "Faculty", "Administrative" }));
         member.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 memberActionPerformed(evt);
@@ -303,4 +304,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField uid;
     // End of variables declaration//GEN-END:variables
+
+    private ImageIcon createImageIcon(String srcmoodleFramesMoodle_Cloudpng, String my_logo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
